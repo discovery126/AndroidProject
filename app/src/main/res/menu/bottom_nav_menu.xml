@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/main_recipes"
+        android:icon="@drawable/main_recipes_image"
+        android:title="@string/title_main_recipes_fragment" />
+
+    <item
+        android:id="@+id/favourite_recipes"
+        android:icon="@drawable/favourite_recipes_image"
+        android:title="@string/title_favourite_recipes_fragment" />
+
+<!--    <item-->
+<!--        android:id="@+id/search_recipes"-->
+<!--        android:icon="@drawable/search_recipes_image"-->
+<!--        android:title="@string/title_search_recipes_fragment" />-->
+
+</menu>

@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Recipes</string>
+    <string name="title_activity_bottom">Recipes</string>
+    <string name="title_main_recipes_fragment">Главная</string>
+    <string name="title_favourite_recipes_fragment">Избранное</string>
+    <string name="title_search_recipes_fragment">Поиск</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="n_1_n_2_3_4_5_1">\t\t\t\t\t\tПОШАГОВЫЙ РЕЦЕПТ ПРИГОТОВЛЕНИЯ\n
+        Шаг 1 Варим картофель и морковь Сварить морковь и картофель.\n
+        Шаг 2 Варим яйца для оливье Сварить яйца вкрутую.\n
+        Шаг 3 Нарезаем яйца, картофель, колбасу и морковку Нарезать равными по размеру мелкими кубиками яйца, картофель, колбасу, морковку.\n
+        Шаг 4 Для салата Оливье режем огурцы Огурцы нарезать и немного отжать, чтобы не было много жидкости в салате.\n
+        Шаг 5 Смешиваем салат Оливье классический советский В нарезанные ингредиенты всыпать горошек (слив воду из него), нарезать зелень, смешать с майонезом. Посолить и поперчить. Убрать в холодильник на 1 ч.\n
+    </string>
+    <string name="components_example">\t\t\t\t\t\t\t\ИНГРЕДИЕНТЫ\n
+        картофель вареный (желательно не молодой, а старый) – 4 шт. средних\n
+        морковка - 1 шт.\n
+        яйца сваренные вкрутую – 4 шт.\n
+        колбаса вареная "докторская" – 300 г\n
+        огурцы маринованные (можно свежие) – 4 шт. средних\n
+        горошек зеленый консервированный – 1 банка весом 200 г\n
+        майонез – 3-4 ст. л.\n
+        листья петрушки и укропа по желанию\n
+        свежемолотый черный перец\n
+        соль\n
+    </string>
+
+
+    <string-array name="author_recipes">
+        <item>Екатерина</item>
+        <item>Анна</item>
+        <item>Олег</item>
+        <item>Никита</item>
+        <item>Александр</item>
+        <item>Армен</item>
+        <item>Людмила</item>
+        <item>Ирина</item>
+        <item>Арина</item>
+        <item>Ульяна</item>
+    </string-array>
+
+    <string-array name="tittle_recipes">
+        <item>Цезарь</item>
+        <item>Оливье</item>
+        <item>Борщ</item>
+        <item>Суп с фрикадельками</item>
+        <item>Уха</item>
+        <item>Люля-кебаб из свинины</item>
+        <item>Картофельная запеканка в духовке</item>
+        <item>Десерт Анны Павловой</item>
+        <item>Десерт «Орешки со сгущенкой»</item>
+        <item>Селедка под шубой</item>
+    </string-array>
+
+
+    <string-array name="categories">
+        <item>Все</item>
+        <item>Первые блюда</item>
+        <item>Вторые блюда</item>
+        <item>Салаты</item>
+        <item>Десерты</item>
+        <item>Мясо</item>
+        <item>Рыба</item>
+    </string-array>
+
+</resources>
