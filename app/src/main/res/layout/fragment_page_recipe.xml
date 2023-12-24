@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_page_recipe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_black"
+        android:gravity="center"
+        android:text="Цезарь"
+        android:textColor="#FFF4B4"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/authorRecipeInDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Автор: Екатерина"
+        android:gravity="center"
+        android:textColor="#BDBF95	"
+        android:textSize="17dp" />
+
+    <ImageView
+        android:id="@+id/imageRecipeInRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/caesar" />
+
+    <LinearLayout
+        android:id="@+id/constraintButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/componentButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginStart="5dp"
+            android:backgroundTint="#5C3DA5"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="ИНГРЕДИЕНТЫ"
+            android:singleLine="true"
+            android:textColor="#FFF4B4"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/cookingRecipeButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="3dp"
+            android:layout_weight="2"
+            android:backgroundTint="#5C3DA5"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="РЕЦЕПТ ПРИГОТОВЛЕНИЯ"
+            android:textColor="#FFF4B4"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/favouriteCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="3"
+            android:button="@drawable/like_checkbox"
+            app:checkedState="unchecked" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/pageRecipeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+</LinearLayout>

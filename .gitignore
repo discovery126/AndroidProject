@@ -1,5 +1,7 @@
 *.iml
 .gradle
+.idea/
+.DS_Store
 /local.properties
 /.idea/caches
 /.idea/libraries
@@ -7,14 +9,22 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+/build
+/captures
 /gradle
+.externalNativeBuild
+.cxx
+app/src/main.rar
+app/src/androidTest/
+app/build.gradle.kts
+app/proguard-rules.pro
+app/src/test/
+app/.gitignore
 gradlew
 gradlew.bat
 settings.gradle.kts
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
 local.properties
+build.gradle.kts
+gradle.properties
+
 
