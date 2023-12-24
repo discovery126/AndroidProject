@@ -45,6 +45,20 @@ public class RegistrationFragment extends Fragment {
             String login = loginRegistration.getText().toString();
             String pass = passwordRegistration.getText().toString();
 
+            if (login.length()==0) {
+                Toast.makeText(getActivity(), "Ваш логин не может быть пустым", Toast.LENGTH_SHORT).show();
+                return;
+            }
+            else if (!login.matches("[A-Za-z]+[A-Za-z\\d]+")) {
+                Toast.makeText(getActivity(), "[Буквы(латиница),цифры] или[Буквы(латиница)]", Toast.LENGTH_LONG).show();
+                return;
+            }
+
+            if (pass.length()==0) {
+                Toast.makeText(getActivity(), "Ваш новый пароль не может быть пустым", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
             User user = new User(login,pass);
             System.out.println(user.getLogin() + " " + user.getPassword());
             Thread thread = new Thread(() -> {
