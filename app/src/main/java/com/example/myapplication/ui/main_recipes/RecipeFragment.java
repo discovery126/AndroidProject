@@ -22,14 +22,11 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.myapplication.CurrentUser;
-import com.example.myapplication.DescriptionRecipe;
 import com.example.myapplication.R;
 import com.example.myapplication.database.FavouriteRecipe;
 import com.example.myapplication.database.MainDb;
 import com.example.myapplication.database.RecipeModel;
 
-import java.util.ArrayList;
 import java.util.Optional;
 
 public class RecipeFragment extends Fragment {
