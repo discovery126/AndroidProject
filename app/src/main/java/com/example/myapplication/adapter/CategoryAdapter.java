@@ -9,20 +9,19 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myapplication.ListenerInterface;
 import com.example.myapplication.ListenerInterfaceCategory;
 import com.example.myapplication.R;
-import com.example.myapplication.model.CategoryModel;
-import com.example.myapplication.ui.main_recipes.MainRecipesFragment;
+import com.example.myapplication.database.CategoryModel;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>{
     Context context;
-    ArrayList<CategoryModel> categories;
+    List<CategoryModel> categories;
     ListenerInterfaceCategory listener;
 
-    public CategoryAdapter(Context context, ArrayList<CategoryModel> categories,ListenerInterfaceCategory listener) {
+    public CategoryAdapter(Context context, List<CategoryModel> categories,ListenerInterfaceCategory listener) {
         this.context = context;
         this.categories = categories;
         this.listener = listener;
@@ -43,7 +42,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
             @Override
             public void onClick(View view) {
                 // Передаёт номер категории рецепта
-                listener.onItemClickedCategory(categories.get(holder.getAdapterPosition()).getId());
+                listener.onItemClickedCategory(categories.get(holder.getAdapterPosition()).getId()-1);
             }
         });
     }

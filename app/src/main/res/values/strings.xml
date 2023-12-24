@@ -3,7 +3,8 @@
     <string name="title_activity_bottom">Recipes</string>
     <string name="title_main_recipes_fragment">Главная</string>
     <string name="title_favourite_recipes_fragment">Избранное</string>
-    <string name="title_search_recipes_fragment">Поиск</string>
+    <string name="title_profile_recipes_fragment">Профиль</string>
+    <string name="title_my_recipe">Мои рецепты</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 

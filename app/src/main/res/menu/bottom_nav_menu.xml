@@ -11,9 +11,9 @@
         android:icon="@drawable/favourite_recipes_image"
         android:title="@string/title_favourite_recipes_fragment" />
 
-<!--    <item-->
-<!--        android:id="@+id/search_recipes"-->
-<!--        android:icon="@drawable/search_recipes_image"-->
-<!--        android:title="@string/title_search_recipes_fragment" />-->
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/account"
+        android:title="@string/title_profile_recipes_fragment" />
 
 </menu>

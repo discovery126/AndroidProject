@@ -1,153 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#5C3DA5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="3dp"
+        android:backgroundTint="#5C3DA5">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-            <View
-                android:id="@+id/view2"
-                android:layout_width="2dp"
-                android:layout_height="0dp"
-                android:layout_marginStart="5dp"
-                android:background="#FFF4B4"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imageRecipe"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.5" />
-
-            <View
-                android:id="@+id/view3"
-                android:layout_width="0dp"
-                android:layout_height="2dp"
-                android:background="#FFF4B4"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.50"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/numberComponents" />
 
             <ImageView
                 android:id="@+id/imageRecipe"
-                android:layout_width="240dp"
-                android:layout_height="150dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                app:layout_constraintBottom_toTopOf="@+id/titleRecipe"
-                app:layout_constraintEnd_toStartOf="@id/view2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@drawable/caesar" />
+                android:src="@drawable/soup_with_meatballs" />
 
             <TextView
                 android:id="@+id/titleRecipe"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
                 android:fontFamily="@font/roboto_black"
                 android:singleLine="true"
                 android:text="Суп с фрикадельками"
                 android:textColor="#FFF4B4"
-                android:textSize="17sp"
-                app:layout_constraintBottom_toTopOf="@+id/authorRecipe"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageRecipe" />
+                android:textSize="17sp" />
 
             <TextView
                 android:id="@+id/authorRecipe"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
                 android:fontFamily="@font/roboto_black"
+                android:singleLine="true"
+                android:layout_gravity="center"
                 android:text="Автор: Никита"
-                android:textColor="#BDBF95	"
-                app:layout_constraintBottom_toTopOf="@+id/numberComponents"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/titleRecipe" />
+                android:textColor="#BDBF95" />
 
             <TextView
                 android:id="@+id/numberComponents"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
-                android:fontFamily="@font/roboto_black"
-                android:text="10 ингредиентов"
-                android:textColor="#BDBF95	"
-                app:layout_constraintBottom_toBottomOf="@id/view3"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/authorRecipe" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:visibility="gone"
-            tools:visibility="gone">
-
-
-            <ImageView
-                android:id="@+id/imageRecipe2"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                tools:layout_editor_absoluteX="5dp"
-                tools:srcCompat="@drawable/caesar" />
-
-            <TextView
-                android:id="@+id/titleRecipe2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:fontFamily="@font/roboto_black"
                 android:singleLine="true"
-                android:text="Суп с фрикадельками"
-                android:textColor="#FFF4B4"
-                android:textSize="17sp"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="160dp" />
-
-            <TextView
-                android:id="@+id/authorRecipe2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_black"
-                android:text="Автор: Никита"
-                android:textColor="#BDBF95	"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="183dp" />
-
-            <TextView
-                android:id="@+id/numberComponents2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_black"
                 android:text="10 ингредиентов"
-                android:textColor="#BDBF95	"
-                tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="203dp" />
+                android:textColor="#BDBF95	" />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

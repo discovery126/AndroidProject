@@ -7,9 +7,14 @@
 /.idea/workspace.xml
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
+/gradle
+gradlew
+gradlew.bat
+settings.gradle.kts
 .DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
 local.properties
+

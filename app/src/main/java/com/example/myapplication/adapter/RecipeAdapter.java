@@ -11,18 +11,18 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.myapplication.ListenerInterface;
-import com.example.myapplication.model.RecipeModel;
+import com.example.myapplication.database.RecipeModel;
 import com.example.myapplication.R;
-import com.example.myapplication.ui.main_recipes.MainRecipesFragment;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.MyViewHolder> {
 
     Context context;
-    ArrayList<RecipeModel> recipes;
+    List<RecipeModel> recipes;
     private ListenerInterface listener;
-    public RecipeAdapter(Context context, ArrayList<RecipeModel> recipes,ListenerInterface listener) {
+    public RecipeAdapter(Context context, List<RecipeModel> recipes,ListenerInterface listener) {
         this.context = context;
         this.recipes = recipes;
         this.listener = listener;
@@ -40,7 +40,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.MyViewHold
     public void onBindViewHolder(@NonNull RecipeAdapter.MyViewHolder holder, int position) {
         holder.textTittleRecipe.setText(recipes.get(position).getTittleRecipe());
         holder.authorRecipe.setText("Автор: ".concat(recipes.get(position).getAuthorRecipe()));
-        holder.textComponentsRecipe.setText(recipes.get(position).getComponentsRecipe());
+        holder.textComponentsRecipe.setText("Ингредиентов: ".concat(recipes.get(position).getComponentsRecipe().toString()));
         holder.imageRecipe.setImageResource(recipes.get(position).getImageRecipe());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
